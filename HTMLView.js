@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
 import htmlToElement from './htmlToElement'
 import {
   Linking,
@@ -75,14 +75,6 @@ class HtmlView extends Component {
     }
     return <Text />
   }
-}
-
-HtmlView.propTypes = {
-  value: PropTypes.string,
-  stylesheet: PropTypes.object,
-  onLinkPress: PropTypes.func,
-  onError: PropTypes.func,
-  renderNode: PropTypes.func,
 }
 
 HtmlView.defaultProps = {
